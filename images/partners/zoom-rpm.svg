@@ -30,7 +30,7 @@
      showgrid="false"
      inkscape:zoom="5.6426667"
      inkscape:cx="93.838611"
-     inkscape:cy="64.065454"
+     inkscape:cy="35.710066"
      inkscape:window-width="1366"
      inkscape:window-height="705"
      inkscape:window-x="1912"
@@ -100,13 +100,12 @@
   </defs>
   <g
      clip-path="url(#clip-0)"
-     id="g24"
-     transform="matrix(1.6191942,0,0,1.6191942,-0.6191942,-6.1274405e-7)">
+     id="g24">
     <g
        mask="url(#mask-0)"
        id="g22">
       <g
-         transform="matrix(0.744167,0,0,0.744167,0.729168,9.89583e-7)"
+         transform="matrix(0.744167, 0, 0, 0.744167, 0.729168, 0.000000989583)"
          id="g20">
         <image
            x="0"
