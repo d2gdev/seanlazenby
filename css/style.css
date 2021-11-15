@@ -2133,10 +2133,6 @@ a.brand:focus{
   .menu-footer .copy{
     display: block;
   }
-/* CSS for Lightbox */
-.imggallery{
-    max-height: 250px;
-}
 }
 
 

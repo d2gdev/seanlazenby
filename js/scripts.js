@@ -139,7 +139,7 @@
 			$('.navbar-fullpage').addClass('navbar-fixed');
       }
       else{
-		  $('.navbar-fullpage').removeClass('navbar-fixed');
+          $('.navbar-fullpage').removeClass('navbar-fixed');
      }
     }
 
@@ -164,7 +164,7 @@
 			scrollingSpeed: 280,
 			loopBottom:true,
 			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
-			afterLoad: function(anchorLink, index){
+            afterLoad: function(anchorLink, index){
 				navbarFullpage();
 				
 			}
@@ -173,7 +173,7 @@
      }
 
      $('.pp-scrollable').on('scroll', function () {
-		 var scrollTop =$(this).scrollTop();
+         var scrollTop =$(this).scrollTop();
 		if (scrollTop > 0 ) {
 			$('.navbar-fullpage').addClass('navbar-fixed');
 		}
