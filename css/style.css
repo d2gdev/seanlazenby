@@ -674,7 +674,7 @@ a.brand:focus{
   position: absolute;
   z-index: 10;
   right:0;
-  bottom:2.4rem;
+  bottom:1.2rem;
   color: #000;
 }
 
@@ -1926,7 +1926,7 @@ a.brand:focus{
 }
 
 .social-list-detail{
-  margin-top:10rem;
+  margin-top:5rem;
 }
 
 .social-list-detail a{
