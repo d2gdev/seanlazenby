@@ -10,24 +10,28 @@
     ExpiresByType image/jpg "access plus 1 month"
     ExpiresByType image/jpeg "access plus 1 month"
     ExpiresByType image/gif "access plus 1 month"
-    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType fonts/png "access plus 1 month"
     ExpiresByType image/webp "access plus 1 month"
 </IfModule>
-
+<filesMatch ".([eE][oO][tT]|[tT][tT][fF]|[sS][vV][gG]|[Ww][Oo][Ff][Ff]|[Ww][Oo][Ff][Ff]2)$">
+   ExpiresDefault A15724800
+   Header append Cache-Control "public"
+</filesMatch>
 <ifModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
 RewriteCond %{HTTP_HOST} ^www.seanlazenby.com [NC]
 RewriteRule ^(.*)$ http://seanlazenby.com/$1 [L,R=301]
-  RewriteEngine On
-  RewriteCond %{HTTP_ACCEPT} image/webp
-  RewriteCond %{REQUEST_URI}  (?i)(.*)(\.jpe?g|\.png)$
-  RewriteCond %{DOCUMENT_ROOT}%1.webp -f
-  RewriteRule (?i)(.*)(\.jpe?g|\.png)$ %1\.webp [L,T=image/webp,R]
+RewriteEngine On
+RewriteCond %{HTTP_ACCEPT} image/webp
+RewriteCond %{REQUEST_URI}  (?i)(.*)(\.jpe?g|\.png)$
+RewriteCond %{DOCUMENT_ROOT}%1.webp -f
+RewriteRule (?i)(.*)(\.jpe?g|\.png)$ %1\.webp [L,T=image/webp,R]
 </IfModule>
 
 <IfModule mod_headers.c>
   Header append Vary Accept env=REDIRECT_accept
 </IfModule>
-
 AddType image/webp .webp
+ErrorDocument 404 /404.html
