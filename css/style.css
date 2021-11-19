@@ -115,7 +115,6 @@ body{
 h1,
 .h1{ 
   font-family: 'ABeeZee', sans-serif;
-  font-weight: 700;
   font-size: 3.428rem;
   line-height: 1.2;
   font-weight: 600;
@@ -276,7 +275,6 @@ textarea{
   color: #fff;
   background-color:#2f2f2f;
   border:0;
-  border-radius: 0;
   padding: 0.7rem 1rem 0.7rem;
   -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.5);
           box-shadow: 0 0 25px rgba(0,0,0,0.5);
@@ -1113,7 +1111,7 @@ a.brand:focus{
   padding:0;
 }
 
-.section-bg{
+.section1-bg{
   position: absolute;
   left: 0;
   top:0;
@@ -1214,7 +1212,6 @@ a.brand:focus{
 .section.active .intro .project-title{
   transform:none;
   opacity: 1;
-  transform:translateY(0);
 }
 
 .subtitle-top{
