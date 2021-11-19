@@ -31,6 +31,10 @@ AddOutputFilterByType DEFLATE text/xml
 </IfModule>
 
 <ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.seanlazenby.com [NC]
+RewriteRule ^(.*)$ http://seanlazenby.com/$1 [L,R=301]
   RewriteEngine On
   RewriteCond %{HTTP_ACCEPT} image/webp
   RewriteCond %{REQUEST_URI}  (?i)(.*)(\.jpe?g|\.png)$
@@ -43,3 +47,4 @@ AddOutputFilterByType DEFLATE text/xml
 </IfModule>
 
 AddType image/webp .webp
+
