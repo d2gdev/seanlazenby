@@ -541,14 +541,10 @@ label.error{
   position: absolute;
   display:block;
   z-index: 101;
-  left:0;
-  top:0;
   width:100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
   color: #fff;
-  margin:0;
-  border-radius: 0;
   
 }
 
@@ -724,6 +720,7 @@ a.brand:focus{
 
 .contacts .contact-item a{
   color: #fff;
+  font-size: 2rem;
 }
 
 
